@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		45E38F6823CC7FE00052741C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E38F6723CC7FE00052741C /* AppDelegate.swift */; };
 		45E38F6A23CC7FE00052741C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E38F6923CC7FE00052741C /* SceneDelegate.swift */; };
-		45E38F6C23CC7FE00052741C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E38F6B23CC7FE00052741C /* ContentView.swift */; };
+		45E38F6C23CC7FE00052741C /* CaloryIntakeChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E38F6B23CC7FE00052741C /* CaloryIntakeChart.swift */; };
 		45E38F6E23CC7FE40052741C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E38F6D23CC7FE40052741C /* Assets.xcassets */; };
 		45E38F7123CC7FE40052741C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45E38F7023CC7FE40052741C /* Preview Assets.xcassets */; };
 		45E38F7423CC7FE40052741C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45E38F7223CC7FE40052741C /* LaunchScreen.storyboard */; };
+		45E38F7E23CC854E0052741C /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E38F7D23CC854E0052741C /* Bar.swift */; };
+		45E38F8123CC960A0052741C /* DayDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E38F8023CC960A0052741C /* DayDataPoint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		45E38F6423CC7FE00052741C /* BarChartsAnimations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BarChartsAnimations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45E38F6723CC7FE00052741C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45E38F6923CC7FE00052741C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		45E38F6B23CC7FE00052741C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		45E38F6B23CC7FE00052741C /* CaloryIntakeChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloryIntakeChart.swift; sourceTree = "<group>"; };
 		45E38F6D23CC7FE40052741C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45E38F7023CC7FE40052741C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45E38F7323CC7FE40052741C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45E38F7523CC7FE40052741C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45E38F7D23CC854E0052741C /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
+		45E38F8023CC960A0052741C /* DayDataPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDataPoint.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,9 @@
 		45E38F6623CC7FE00052741C /* BarChartsAnimations */ = {
 			isa = PBXGroup;
 			children = (
-				45E38F6723CC7FE00052741C /* AppDelegate.swift */,
-				45E38F6923CC7FE00052741C /* SceneDelegate.swift */,
-				45E38F6B23CC7FE00052741C /* ContentView.swift */,
-				45E38F6D23CC7FE40052741C /* Assets.xcassets */,
-				45E38F7223CC7FE40052741C /* LaunchScreen.storyboard */,
-				45E38F7523CC7FE40052741C /* Info.plist */,
+				45E38F7F23CC95F00052741C /* Models */,
+				45E38F7C23CC85360052741C /* Views */,
+				45E38F7B23CC80560052741C /* Supporting Files */,
 				45E38F6F23CC7FE40052741C /* Preview Content */,
 			);
 			path = BarChartsAnimations;
@@ -73,6 +74,35 @@
 				45E38F7023CC7FE40052741C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45E38F7B23CC80560052741C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				45E38F6723CC7FE00052741C /* AppDelegate.swift */,
+				45E38F6923CC7FE00052741C /* SceneDelegate.swift */,
+				45E38F6D23CC7FE40052741C /* Assets.xcassets */,
+				45E38F7223CC7FE40052741C /* LaunchScreen.storyboard */,
+				45E38F7523CC7FE40052741C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		45E38F7C23CC85360052741C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45E38F6B23CC7FE00052741C /* CaloryIntakeChart.swift */,
+				45E38F7D23CC854E0052741C /* Bar.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		45E38F7F23CC95F00052741C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				45E38F8023CC960A0052741C /* DayDataPoint.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45E38F7E23CC854E0052741C /* Bar.swift in Sources */,
 				45E38F6823CC7FE00052741C /* AppDelegate.swift in Sources */,
+				45E38F8123CC960A0052741C /* DayDataPoint.swift in Sources */,
 				45E38F6A23CC7FE00052741C /* SceneDelegate.swift in Sources */,
-				45E38F6C23CC7FE00052741C /* ContentView.swift in Sources */,
+				45E38F6C23CC7FE00052741C /* CaloryIntakeChart.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,7 +320,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BarChartsAnimations/Preview Content\"";
 				DEVELOPMENT_TEAM = 273FZ5G5B8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = BarChartsAnimations/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BarChartsAnimations/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +340,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"BarChartsAnimations/Preview Content\"";
 				DEVELOPMENT_TEAM = 273FZ5G5B8;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = BarChartsAnimations/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BarChartsAnimations/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
